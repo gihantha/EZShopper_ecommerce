@@ -1,14 +1,19 @@
-<x-app-layout>
-    
-</x-app-layout>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=`device-width`, initial-scale=1.0">
-    <title>Document</title>
+    @include('admin.css')
 </head>
+
 <body>
-    admin
+
+    @include('admin.sidebar')
+
+    @include('admin.header')
+
+    @include('admin.body')
+
+    @include('admin.script')
 </body>
+
 </html>
