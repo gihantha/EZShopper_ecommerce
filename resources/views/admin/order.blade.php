@@ -147,6 +147,7 @@
                 <th>Delivery Status</th>
                 <th>Image</th>
                 <th>Delivered</th>
+                <th>Print PDF</th>
             </tr>
             @foreach($order as $order)
                 <tr>
@@ -169,6 +170,10 @@
                             <p class="status payment-status">Delivered</p>
                         @endif
                     </td>
+                    <td>
+                        <a href="{{url('print_pdf', $order->id)}}" class="btn btn-secondary">Print PDF</a>
+                    </td>
+
                 </tr>
             @endforeach
         </table>
