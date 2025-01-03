@@ -19,6 +19,45 @@
             color: #f1f1f1; /* Light color for the title */
         }
 
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .search-container input[type="text"] {
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #5bc0de;
+            background-color: #2c2c2c;
+            color: #fff;
+            width: 300px;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .search-container input[type="text"]:focus {
+            border-color: #00bcd4;
+            outline: none;
+        }
+
+        .search-container input[type="submit"] {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #5bc0de;
+            color: #121212;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .search-container input[type="submit"]:hover {
+            background-color: #00bcd4;
+        }
+
         .table_deg {
             width: 90%;
             margin: auto;
@@ -122,6 +161,14 @@
                 height: 50px;
             }
         }
+
+        /* Empty state message styling */
+        .no-data-found {
+            text-align: center;
+            font-size: 18px;
+            color: #f44336; /* Red for error or no data */
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -134,6 +181,16 @@
 <div class="main-panel">
     <div class="content-wrapper">
         <h1 class="title_deg">All Orders</h1>
+
+        <!-- Search Bar Section -->
+        <div class="search-container">
+            <form action="{{url('search')}}" method="get">
+                @csrf
+                <input type="text" name="search" placeholder="Search For Something">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+
         <table class="table_deg">
             <tr class="th_deg">
                 <th>Name</th>
@@ -150,7 +207,8 @@
                 <th>Print PDF</th>
                 <th>Send Email</th>
             </tr>
-            @foreach($order as $order)
+
+            @forelse($order as $order)
                 <tr>
                     <td>{{$order->name}}</td>
                     <td>{{$order->email}}</td>
@@ -179,7 +237,13 @@
                     </td>
 
                 </tr>
-            @endforeach
+            @empty
+                <tr>
+                    <td colspan="16" class="no-data-found">
+                        No Data Found
+                    </td>
+                </tr>
+            @endforelse
         </table>
     </div>
 </div>
