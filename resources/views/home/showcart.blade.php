@@ -21,6 +21,8 @@
     <!-- responsive style -->
     <link href="{{asset('home/css/responsive.css')}}" rel="stylesheet" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <style type="text/css">
         /* Centering the table container */
         .center {
@@ -190,6 +192,7 @@
 </head>
 <body>
 <div class="hero_area">
+    @include('sweetalert::alert')
     <!-- header section starts -->
     @include('home.header')
     <!-- end header section -->
@@ -220,7 +223,7 @@
                         <td>Rs. {{$cart->price}}</td>
                         <td><img class="img_deg" src="/product/{{$cart->image}}"> </td>
                         <td>
-                            <a class="btn btn-danger" onclick="return confirm('Are you sure to remove this product?')" href="{{url('/remove_cart', $cart->id)}}">Remove Product</a></td>
+                            <a class="btn btn-danger" onclick="confirmation(event)" href="{{url('/remove_cart', $cart->id)}}">Remove Product</a></td>
                     </tr>
                         <?php $totalprice=$totalprice+$cart->price ?>
                 @endforeach
@@ -256,5 +259,33 @@
     <script src="home/js/bootstrap.js"></script>
     <!-- custom js -->
     <script src="home/js/custom.js"></script>
+
+    <script>
+        function confirmation(ev) {
+            ev.preventDefault();
+            var urlToRedirect = ev.currentTarget.getAttribute('href');
+            console.log(urlToRedirect);
+            swal({
+                title: "Are you sure to cancel this product",
+                text: "You will not be able to revert this!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+                .then((willCancel) => {
+                    if (willCancel) {
+
+
+
+                        window.location.href = urlToRedirect;
+
+                    }
+
+
+                });
+
+
+        }
+    </script>
 </body>
 </html>
