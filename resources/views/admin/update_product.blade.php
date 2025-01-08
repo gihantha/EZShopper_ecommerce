@@ -47,10 +47,11 @@
 
         @if(session()->has('message'))
             <div class="alert alert-success">
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                 {{ session()->get('message') }}
             </div>
         @endif
+
 
         <h1 class="font_size">Update Product</h1>
         <form action="{{url('/update_product_confirm', $product->id)}}" method="POST" enctype="multipart/form-data">

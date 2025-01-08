@@ -140,10 +140,11 @@
 
         @if(session()->has('message'))
             <div class="alert alert-success">
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                 {{ session()->get('message') }}
             </div>
         @endif
+
 
         <h1 class="font_size">Add Product</h1>
 

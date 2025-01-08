@@ -1,13 +1,9 @@
 <section class="product_section layout_padding" style="padding: 40px 0; background-color: #f4f4f4;">
     <div class="container" style="max-width: 1200px; margin: 0 auto;">
         <div class="heading_container heading_center" style="text-align: center; margin-bottom: 40px;">
-            <h2 style="font-size: 36px; color: #333;">
-                Our <span style="color: #f39c12;">products</span>
-            </h2>
-            <br>
-            <br>
+
             <div>
-                <form action="{{url('product_search')}}" method="GET" style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+                <form action="{{url('search_product')}}" method="GET" style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
                     @csrf
                     <!-- Search Bar with Increased Length -->
                     <input type="text" name="search" placeholder="Search for something"
@@ -26,7 +22,6 @@
                 {{ session()->get('message') }}
             </div>
         @endif
-
 
 
         <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">

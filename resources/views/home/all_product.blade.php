@@ -20,6 +20,7 @@
     <!-- responsive style -->
     <link href="{{asset('home/css/responsive.css')}}" rel="stylesheet" />
 
+
     <style>
         /* Comment section styles */
         .comment-section {
@@ -153,27 +154,16 @@
 </head>
 <body>
 
-@include('sweetalert::alert')
-
-<div class="hero_area">
     <!-- header section starts -->
     @include('home.header')
     <!-- end header section -->
-    <!-- slider section -->
-    @include('home.slider')
-    <!-- end slider section -->
-</div>
 
-<!-- why section -->
-@include('home.why')
-<!-- end why section -->
 
-<!-- arrival section -->
-@include('home.new_arrival')
-<!-- end arrival section -->
+
+
 
 <!-- product section -->
-@include('home.product')
+@include('home.product_view')
 <!-- end product section -->
 
 <!-- comment and reply system start here -->
@@ -218,17 +208,11 @@
 </div>
 <!-- comment and reply system end here -->
 
-<!-- subscribe section -->
-@include('home.subscribe')
-<!-- end subscribe section -->
 
-<!-- client section -->
-@include('home.client')
-<!-- end client section -->
 
-<!-- footer start -->
-@include('home.footer')
-<!-- footer end -->
+
+
+
 
 <!-- jQuery -->
 <script type="text/javascript">
