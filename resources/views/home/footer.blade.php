@@ -7,9 +7,11 @@
                         <a href="#"><img width="210" src="home/images/logo.png" alt="#" /></a>
                       </div>
                       <div class="information_f">
-                        <p><strong>ADDRESS:</strong> 28 White tower, Street Name New York City, USA</p>
-                        <p><strong>TELEPHONE:</strong> +91 987 654 3210</p>
-                        <p><strong>EMAIL:</strong> yourmain@gmail.com</p>
+                        <p><strong>ADDRESS:</strong> 39th Mile Post, Radaliyadda, Bibile, Sri Lanka</p>
+                        <p><strong>TELEPHONE:</strong> +94 71 9223365</p>
+                        <p><strong>EMAIL:</strong> gihantha01@gmail.com</p>
+                          <p><strong>Github:</strong> <a href="https://github.com/gihantha">Click Me!!</a></p>
+
                       </div>
                    </div>
                </div>
@@ -21,12 +23,11 @@
                      <div class="widget_menu">
                         <h3>Menu</h3>
                         <ul>
-                           <li><a href="#">Home</a></li>
-                           <li><a href="#">About</a></li>
-                           <li><a href="#">Services</a></li>
-                           <li><a href="#">Testimonial</a></li>
-                           <li><a href="#">Blog</a></li>
-                           <li><a href="#">Contact</a></li>
+                           <li><a href="{{url('/')}}">Home</a></li>
+
+                           <li><a href="{{url('/show_order')}}">Order</a></li>
+                           <li><a href="{{url('/show_cart')}}">Cart</a></li>
+
                         </ul>
                      </div>
                   </div>
@@ -36,15 +37,15 @@
                         <ul>
                            <li><a href="#">Account</a></li>
                            <li><a href="#">Checkout</a></li>
-                           <li><a href="#">Login</a></li>
-                           <li><a href="#">Register</a></li>
-                           <li><a href="#">Shopping</a></li>
-                           <li><a href="#">Widget</a></li>
+                           <li><a href="{{ route('login') }}">Login</a></li>
+                           <li><a href="{{ route('register') }}">Register</a></li>
+                            <li><a href="https://github.com/gihantha">Github</a></li>
+
                         </ul>
                      </div>
                   </div>
                      </div>
-                  </div>     
+                  </div>
                   <div class="col-md-5">
                      <div class="widget_menu">
                         <h3>Newsletter</h3>

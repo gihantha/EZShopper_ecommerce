@@ -4,8 +4,7 @@
           <div class="card-body card-body-padding d-flex align-items-center justify-content-between">
             <div class="ps-lg-1">
               <div class="d-flex align-items-center justify-content-between">
-                <p class="mb-0 font-weight-medium me-3 buy-now-text">Free 24/7 customer support, updates, and more with this template!</p>
-                <a href="https://www.bootstrapdash.com/product/corona-free/?utm_source=organic&utm_medium=banner&utm_campaign=buynow_demo" target="_blank" class="btn me-2 buy-now-btn border-0">Get Pro</a>
+                <p class="mb-0 font-weight-medium me-3 buy-now-text">Free 24/7 customer support, For All EZ Shopper Customers!</p>
               </div>
             </div>
             <div class="d-flex align-items-center justify-content-between">
@@ -19,8 +18,8 @@
       </div>
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-          <a class="sidebar-brand brand-logo" href="index.html"><img src="admin/assets/images/logo.svg" alt="logo" /></a>
-          <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="admin/assets/images/logo-mini.svg" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo" href="index.html"><img src="admin/assets/images/logo.svg" style="width: 369px; height: 49px" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="admin/assets/images/logo2.svg    " alt="logo" style="width: 100px; height: 100px" /></a>
         </div>
         <ul class="nav">
           <li class="nav-item profile">
@@ -31,45 +30,45 @@
                   <span class="count bg-success"></span>
                 </div>
                 <div class="profile-name">
-                  <h5 class="mb-0 font-weight-normal">Henry Klein</h5>
-                  <span>Gold Member</span>
+                  <h5 class="mb-0 font-weight-normal">Gihantha Kaveen</h5>
+                  <span>Admin</span>
                 </div>
               </div>
               <a href="#" id="profile-dropdown" data-bs-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
-              <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
-                <a href="#" class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-settings text-primary"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-onepassword  text-info"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-calendar-today text-success"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
-                  </div>
-                </a>
-              </div>
+{{--              <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">--}}
+{{--                <a href="#" class="dropdown-item preview-item">--}}
+{{--                  <div class="preview-thumbnail">--}}
+{{--                    <div class="preview-icon bg-dark rounded-circle">--}}
+{{--                      <i class="mdi mdi-settings text-primary"></i>--}}
+{{--                    </div>--}}
+{{--                  </div>--}}
+{{--                  <div class="preview-item-content">--}}
+{{--                    <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>--}}
+{{--                  </div>--}}
+{{--                </a>--}}
+{{--                <div class="dropdown-divider"></div>--}}
+{{--                <a href="#" class="dropdown-item preview-item">--}}
+{{--                  <div class="preview-thumbnail">--}}
+{{--                    <div class="preview-icon bg-dark rounded-circle">--}}
+{{--                      <i class="mdi mdi-onepassword  text-info"></i>--}}
+{{--                    </div>--}}
+{{--                  </div>--}}
+{{--                  <div class="preview-item-content">--}}
+{{--                    <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>--}}
+{{--                  </div>--}}
+{{--                </a>--}}
+{{--                <div class="dropdown-divider"></div>--}}
+{{--                <a href="#" class="dropdown-item preview-item">--}}
+{{--                  <div class="preview-thumbnail">--}}
+{{--                    <div class="preview-icon bg-dark rounded-circle">--}}
+{{--                      <i class="mdi mdi-calendar-today text-success"></i>--}}
+{{--                    </div>--}}
+{{--                  </div>--}}
+{{--                  <div class="preview-item-content">--}}
+{{--                    <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>--}}
+{{--                  </div>--}}
+{{--                </a>--}}
+{{--              </div>--}}
             </div>
           </li>
           <li class="nav-item nav-category">

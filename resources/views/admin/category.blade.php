@@ -31,7 +31,7 @@
 
         .input_color {
             background-color: #333; /* Dark input background */
-            color: #fff; /* Light text color */
+            color: black; /* Light text color */
             padding: 10px;
             border: 2px solid #555;
             width: 50%;

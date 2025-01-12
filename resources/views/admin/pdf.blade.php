@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Order Details</title>
+    <title>Order Details - EZ Shopper</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,7 +23,18 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+            color: #FF7A00;
+        }
+
+        h2 {
             text-align: center;
             color: #444;
             font-size: 28px;
@@ -76,11 +87,21 @@
             color: #888;
             margin-top: 10px;
         }
+        .footer {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #888;
+        }
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>Order Details</h1>
+    <div class="header">
+        <h1>EZ Shopper</h1>
+    </div>
+
+    <h2>Order Details</h2>
     <div class="order-details">
         <div class="label">Customer Name:</div>
         <div class="value">{{$order->name}}</div>
@@ -94,9 +115,6 @@
         <div class="label">Customer Address:</div>
         <div class="value">{{$order->address}}</div>
 
-        <div class="label">Customer ID:</div>
-        <div class="value">{{$order->user_id}}</div>
-
         <div class="label">Product Name:</div>
         <div class="value">{{$order->product_title}}</div>
 
@@ -109,8 +127,7 @@
         <div class="label">Payment Status:</div>
         <div class="value">{{$order->payment_status}}</div>
 
-        <div class="label">Product ID:</div>
-        <div class="value">{{$order->product_id}}</div>
+
     </div>
 
     <div class="order-summary">
@@ -119,6 +136,10 @@
         </div>
         <div class="price">${{$order->price}}</div>
     </div>
+    <div class="footer">
+        &copy; {{ date('Y') }} EZ Shopper. All rights reserved.
+    </div>
+
 </div>
 </body>
 </html>

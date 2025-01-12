@@ -221,8 +221,8 @@
 <!-- footer end -->
 
 <div class="cpy_">
-    <p class="mx-auto">© 2021 All Rights Reserved By <a href="https://html.design/">Free Html Templates</a><br>
-        Distributed By <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+    <p class="mx-auto">© 2025 All Rights Reserved By <a href="https://github.com/gihantha">Github</a><br>
+        Distributed By <a href="https://github.com/gihantha/EZShopper_ecommerce" target="_blank">EZ Shopper</a>
     </p>
 </div>
 
